@@ -1,20 +1,6 @@
 # YouTube Music Playlist Auto-Liker
 
-A client-side userscript for Tampermonkey and Violentmonkey that automatically likes every song in a YouTube Music playlist. This tool enables users to bulk-transfer songs from any playlist into their personal "Liked Music" collection while preserving track order and preventing accidental unliking.
-
----
-
-## Background and Problem Statement
-
-YouTube Music does not provide a native feature to bulk-move tracks from an existing playlist into the primary "Liked Music" auto-playlist. Users who want to transfer playlists must manually open each track and click the like button.
-
-For playlists with hundreds of songs, manual liking is impractical. Furthermore:
-- Adding tracks in standard top-to-bottom order reverses their chronological entry in "Liked Music".
-- Clicking already-liked songs toggles the button and unlikes them.
-- Rapidly clicking buttons triggers YouTube rate-limiting (`HTTP 429`).
-- Long playlists utilize virtual scrolling and DOM recycling, requiring dynamic preloading before all rows can be accessed.
-
-This userscript automates the process with configurable delays, anti-detection jitter, duplicate protection, and reverse-order liking.
+A client-side userscript that automatically likes every song in a YouTube Music playlist. This tool enables users to bulk-transfer songs from any playlist into their personal "Liked Music" collection while preserving track order and preventing accidental unliking.
 
 ---
 
@@ -22,14 +8,14 @@ This userscript automates the process with configurable delays, anti-detection j
 
 - **Playlist to Liked Music Migration**: Quickly transfer any custom, public, or shared playlist into your primary Liked Music library.
 - **Chronological Preservation**: Use the "Oldest Songs First" mode so older playlist additions appear at the bottom of your Liked Music library, preserving your listening timeline.
-- **Library Consolidation**: Merge multiple genre or mood playlists into your central algorithm-trained Liked collection.
+- **Account Migration**: When switching accounts, users who keep their music in their 'liked music' playlist have no native methods to transfer liked music to a new account's liked music playlist.
 - **Safe Resumption**: Run the script on partially liked playlists without risking unliking tracks you already marked as liked.
 
 ---
 
 ## Key Features
 
-- **Direction Control**: Support for both bottom-to-top (Oldest First) and top-to-bottom (Playlist Order) execution.
+- **Direction Control**: Support for both bottom-to-top (Oldest First) and top-to-bottom (Playlist Order) execution. This feature was missing in similar publicly available scripts
 - **Smart Duplicate Prevention**: Inspects `like-status="LIKE"` and `aria-pressed="true"` states prior to clicking, preventing accidental unliking of already-liked tracks.
 - **Rate-Limiting Protection**: Customizable minimum and maximum delay boundaries with randomized interval jitter to mimic natural user interaction.
 - **Targeted Playlist Isolation**: Scopes exclusively to the playlist shelf container (`ytmusic-playlist-shelf-renderer`), ignoring unrelated recommendations or suggested tracks at the bottom of the page.
@@ -131,4 +117,4 @@ If using Chrome or Chromium-based browsers under Manifest V3:
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details. Feel free to use or modify this script freely.

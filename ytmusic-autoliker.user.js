@@ -439,7 +439,6 @@
     return finalRows;
   }
 
-  // --- UI Controller (100% Trusted Types / Pure DOM) ---
   class AutoLikerUI {
     constructor() {
       injectCSS();
