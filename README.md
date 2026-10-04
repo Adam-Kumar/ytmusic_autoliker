@@ -57,7 +57,7 @@ If using Chrome or Chromium-based browsers under Manifest V3:
 ### Method 1: Direct Install (Recommended)
 1. Ensure your userscript manager extension is enabled.
 2. Click the direct installation link to the raw userscript file:
-   [Install ytmusic-autoliker.user.js](https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPOSITORY/main/ytmusic-autoliker.user.js)
+   [Install ytmusic-autoliker.user.js](https://raw.githubusercontent.com/Adam-Kumar/ytmusic_autoliker/main/ytmusic-autoliker.user.js)
 3. Tampermonkey will open an installation prompt. Click **Install**.
 
 ### Method 2: Manual Installation

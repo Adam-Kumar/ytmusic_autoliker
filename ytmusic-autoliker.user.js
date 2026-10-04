@@ -1,9 +1,13 @@
 // ==UserScript==
 // @name         YouTube Music Playlist Auto-Liker
-// @namespace    https://github.com/autoliker-ytm
+// @namespace    https://github.com/Adam-Kumar/ytmusic_autoliker
 // @version      1.4.1
 // @description  Bulk like every song in a YouTube Music playlist with customizable delays, oldest-first option, smart skip for already liked tracks, and a sleek floating UI.
-// @author       Antigravity
+// @author       Adam Kumar
+// @homepageURL  https://github.com/Adam-Kumar/ytmusic_autoliker
+// @supportURL   https://github.com/Adam-Kumar/ytmusic_autoliker/issues
+// @downloadURL  https://raw.githubusercontent.com/Adam-Kumar/ytmusic_autoliker/main/ytmusic-autoliker.user.js
+// @updateURL    https://raw.githubusercontent.com/Adam-Kumar/ytmusic_autoliker/main/ytmusic-autoliker.user.js
 // @match        *://music.youtube.com/*
 // @match        *://www.youtube.com/*
 // @icon         https://music.youtube.com/img/favicon_144.png
